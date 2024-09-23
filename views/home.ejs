@@ -1,0 +1,43 @@
+<%- include('./base/header.ejs') %>
+  <div class ="container">
+    <div class="alert bg-success my-3">
+        <h4 class="text-center" style="color: white;">Add new student</h4>
+        </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col"></div>
+                <div class="col">
+                    <form action='/add/student' method="post">
+                        <div> 
+                            <label for="" class="form-label" style="color: brown;">Roll NO</label>
+                            <input type ="text" name="rollNo" class="form-control">
+                        </div>
+                        <div> 
+                            <label for="" class="form-label"style="color: brown;">FIRST NAME</label>
+                            <input type ="text" name="firstName" class="form-control" >
+                        </div>
+                        <div> 
+                            <label for="" class="form-label"style="color: brown;">LAST NAME</label>
+                            <input type ="text" name="lastName" class="form-control">
+                        </div>
+                        <div> 
+                            <label for="" class="form-label"style="color: brown;">FATHERS NAME</label>
+                            <input type ="text" name="fatherName" class="form-control">
+                        </div>
+                        <div> 
+                            <label for="" class="form-label"style="color: brown;">AADHAR CARD NO</label>
+                            <input type ="text" name="adharCardNo" class="form-control">
+                        </div>
+                        <div> 
+                            <label for="" class="form-label"style="color: brown;">MOBILE NO</label>
+                            <input type ="text" name="mobileNo" class="form-control">
+                        </div>
+                        <input type="submit" value="Add student" class="btn btn-warning my-3 w-100" style="color:rgb(243, 237, 237)" >
+                    </form>
+                </div>
+                <div class="col"></div>
+            </div>
+        </div>
+<%- include('./base/footer.ejs') %>
+   
